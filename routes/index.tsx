@@ -157,7 +157,7 @@ function Main() {
 function Footer() {
   return (
     <footer class={tw`mt-8 pb-12 text-gray-400 text-center`}>
-      besok masih harus ada, stay alive ..
+      besok masih harus ada, stay alive!
     </footer>
   );
 }
