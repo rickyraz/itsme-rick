@@ -104,7 +104,7 @@ function Main() {
 
   return (
     <main class={tw`mt-8`}>
-      <div ref={setRef} class={tw`space-y-6`}>
+      <div class={tw`space-y-6`}>
         <button class={stylebtn}>
           <a
             href="https://twitter.com/rickyrazhari8"
