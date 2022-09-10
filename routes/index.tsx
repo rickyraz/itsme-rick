@@ -32,13 +32,11 @@ export default function MainPage(props: PageProps) {
 function Content() {
   return (
     <div>
-      <div class={tw`flex justify-center`}>
-        <img src="/inosuke.webp" alt="inosuke background" class={tw`w-auto`} />
+      <div class="flex justify-center">
+        <img src="/inosuke.webp" alt="inosuke background" class="w-auto" />
       </div>
 
-      <div
-        class={tw`px-8 mx-auto max-w-screen-md -mt-28 bg-gradient-to-t from-[#02071B] to-[#10182E] h-screen`}
-      >
+      <div class="px-8 mx-auto max-w-screen-md -mt-28 bg-gradient-to-t from-[#02071B] to-[#10182E] h-screen">
         <Header />
         <Main />
         <Footer />
@@ -52,25 +50,21 @@ function Content() {
 function Header() {
   return (
     <header>
-      <div
-        class={tw`flex justify-center items-center`}
-      >
-        <div
-          class={tw`rounded-full bg-gradient-to-r p-[0.5px] from-[#4A6DC6] to-[#10182E] mt-12`}
-        >
+      <div class="flex justify-center items-center">
+        <div class="rounded-full bg-gradient-to-r p-[0.5px] from-[#4A6DC6] to-[#10182E] mt-12">
           <img
             src="/rick.jpg"
             height="200px"
             alt="rickyrazhari-logo"
-            class={tw` rounded-full p-1 w-24`}
+            class="rounded-full p-1 w-24"
           />
         </div>
       </div>
-      <div class={tw`mt-4 text-base text-sans text-center `}>
-        <h1 class={tw`text-white`}>
+      <div class="mt-4 text-base text-sans text-center ">
+        <h1 class="text-white">
           Hi! it' me rick, your old friend
         </h1>
-        <h2 class={tw`mt-2 text-gray-400`}>
+        <h2 class="mt-2 text-gray-400">
           these are my social media and number.. call me yaa.. whenever you want
           or need help
         </h2>
@@ -80,8 +74,8 @@ function Header() {
 }
 
 function Main() {
-  const stylebtn = tw`bg-gray-100 w-full rounded-full py-3 box`;
-  const styletext = tw`text-gray-800 text-sans font-medium text-sm`;
+  const stylebtn = "bg-gray-100 w-full rounded-full py-3 box";
+  const styletext = "text-gray-800 text-sans font-medium text-sm";
 
   //------------ PROBLEM IN GSAP.UTILS.SELECTOR()
   // let ref2 = null;
@@ -103,12 +97,12 @@ function Main() {
   // }, []);
 
   return (
-    <main class={tw`mt-8`}>
-      <div class={tw`space-y-6`}>
+    <main class="mt-8">
+      <div class="space-y-6">
         <button class={stylebtn}>
           <a
             href="https://twitter.com/rickyrazhari8"
-            class={tw`flex items-center justify-center rounded-full`}
+            class="flex items-center justify-center rounded-full"
           >
             <TwitterIcon />
             <span class={styletext}>
@@ -119,7 +113,7 @@ function Main() {
         <button class={stylebtn}>
           <a
             href="https://wa.me/+6281902794798?text=p"
-            class={tw`flex items-center justify-center`}
+            class="flex items-center justify-center"
           >
             <WhatsappIcon />
             <span class={styletext}>
@@ -130,7 +124,7 @@ function Main() {
         <button class={stylebtn}>
           <a
             href="https://discord.gg/dqd82stJ"
-            class={tw`flex items-center justify-center`}
+            class="flex items-center justify-center"
           >
             <DiscordIcon />
             <span class={styletext}>
@@ -141,7 +135,7 @@ function Main() {
         <button class={stylebtn}>
           <a
             href="https://github.com/rickyraz"
-            class={tw`flex items-center justify-center`}
+            class="flex items-center justify-center"
           >
             <GithubIcon />
             <span class={styletext}>
@@ -152,7 +146,7 @@ function Main() {
         <button class={stylebtn}>
           <a
             href="https://www.behance.net/rickyrazhari"
-            class={tw`flex items-center justify-center`}
+            class="flex items-center justify-center"
           >
             <BehanceIcon />
             <span class={styletext}>
@@ -167,7 +161,7 @@ function Main() {
 
 function Footer() {
   return (
-    <footer class={tw`mt-8 pb-12 text-gray-400 text-center`}>
+    <footer class="mt-8 pb-12 text-gray-400 text-center">
       besok masih harus ada, stay alive!
     </footer>
   );
@@ -304,6 +298,7 @@ function DiscordIcon() {
     </svg>
   );
 }
+
 function BehanceIcon() {
   return (
     <svg
